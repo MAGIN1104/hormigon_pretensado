@@ -1,0 +1,23 @@
+.mat-step-icon::before {
+  font-family: "Font Awesome 5 Free"; /* Asegúrate de tener Font Awesome instalado */
+  content: "\f138"; /* Código Unicode del nuevo icono */
+}
+.stepOne {
+  display: flex;
+  &-item_1 {
+    width: 40%;
+    margin: 0 20px;
+  }
+  &-item_2 {
+    width: 60%;
+    margin: 0 20px;
+  }
+}
+.firtCal{
+  display: flex;
+  justify-content: space-around;
+  .card{
+    margin: 0 10px;
+    width: 30%;
+  }
+}

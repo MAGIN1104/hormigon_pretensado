@@ -1,0 +1,100 @@
+<mat-card class="my-2">
+  <mat-card-content>
+    <form [formGroup]="firstFormGroup">
+      <mat-card-title>INTRODUZCA VALORES DE ENTRADA</mat-card-title>
+      <div style="display: flex; justify-content: space-between">
+        <button type="button" class="btn btn-primary" (click)="demoValue()">
+          DEMO
+        </button>
+        <button type="button" class="btn btn-secondary" (click)="resetForm()">
+          RESET
+        </button>
+        <button type="button" class="btn btn-success" (click)="calculate()">
+          CALCULAR
+        </button>
+      </div>
+      <hr />
+      <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+        <mat-form-field style="margin-right: 20px" appearance="outline">
+          <mat-label>P<sub>1</sub></mat-label>
+          <input matInput formControlName="p1Value" placeholder="P1" />
+        </mat-form-field>
+
+        <mat-form-field style="margin-right: 20px" appearance="outline">
+          <mat-label>A<sub>t</sub></mat-label>
+          <input matInput formControlName="AtValue" placeholder="At" />
+        </mat-form-field>
+
+        <mat-form-field style="margin-right: 20px" appearance="outline">
+          <mat-label>K</mat-label>
+          <input matInput formControlName="KValue" placeholder="K" />
+        </mat-form-field>
+
+        <mat-form-field style="margin-right: 20px" appearance="outline">
+          <mat-label>L</mat-label>
+          <input matInput formControlName="LValue" placeholder="L" />
+        </mat-form-field>
+
+        <mat-form-field style="margin-right: 20px" appearance="outline">
+          <mat-label>u</mat-label>
+          <input matInput formControlName="uValue" placeholder="u" />
+        </mat-form-field>
+
+        <mat-form-field style="margin-right: 20px" appearance="outline">
+          <mat-label>e</mat-label>
+          <input matInput formControlName="eValue" placeholder="e" />
+        </mat-form-field>
+
+        <mat-form-field style="margin-right: 20px" appearance="outline">
+          <mat-label>f<sub>pu</sub></mat-label>
+          <input matInput formControlName="fpuValue" placeholder="fpu" />
+        </mat-form-field>
+
+        <mat-form-field style="margin-right: 20px" appearance="outline">
+          <mat-label>h<sub>c</sub></mat-label>
+          <input matInput formControlName="hcValue" placeholder="hc" />
+        </mat-form-field>
+
+        <mat-form-field style="margin-right: 20px" appearance="outline">
+          <mat-label>E<sub>a</sub></mat-label>
+          <input matInput formControlName="EaValue" placeholder="Ea" />
+        </mat-form-field>
+
+        <mat-form-field style="margin-right: 20px" appearance="outline">
+          <mat-label>y<sub>h</sub></mat-label>
+          <input matInput formControlName="yhValue" placeholder="Yh" />
+        </mat-form-field>
+
+        <mat-form-field style="margin-right: 20px" appearance="outline">
+          <mat-label>f'<sub>ci</sub></mat-label>
+          <input matInput formControlName="fciValue" placeholder="fci" />
+        </mat-form-field>
+
+        <mat-form-field style="margin-right: 20px" appearance="outline">
+          <mat-label>M<sub>DC</sub></mat-label>
+          <input matInput formControlName="MdcValue" placeholder="Mdc" />
+        </mat-form-field>
+
+        <mat-form-field style="margin-right: 20px" appearance="outline">
+          <mat-label>M<sub>LL</sub></mat-label>
+          <input matInput formControlName="MllValue" placeholder="Mll" />
+        </mat-form-field>
+
+        <mat-form-field style="margin-right: 20px" appearance="outline">
+          <mat-label>A</mat-label>
+          <input matInput formControlName="AValue" placeholder="A" />
+        </mat-form-field>
+
+        <mat-form-field style="margin-right: 20px" appearance="outline">
+          <mat-label>I</mat-label>
+          <input matInput formControlName="IValue" placeholder="I" />
+        </mat-form-field>
+
+        <mat-form-field style="margin-right: 20px" appearance="outline">
+          <mat-label>RH</mat-label>
+          <input matInput formControlName="RHValue" placeholder="RH" />
+        </mat-form-field>
+      </div>
+    </form>
+  </mat-card-content>
+</mat-card>
